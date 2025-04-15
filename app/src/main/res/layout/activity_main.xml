@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2F4F2F">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/helloText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello, cahya"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Temperature Box -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/bg_red_gradient"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp"
+            android:clipToOutline="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="temperature"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="43.5C"
+                android:textSize="40sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+
+        </LinearLayout>
+
+        <!-- Kelembapan dan Tombol Notifikasi -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="2"
+            android:layout_marginBottom="16dp">
+
+            <!-- Box Kelembapan -->
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#0D47A1"
+                android:layout_marginEnd="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kelembapan"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50C"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#B22222"
+                    android:text="Kelembapan normal"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:padding="6dp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- Tombol Notifikasi dan About -->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginStart="8dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Notifikasi"
+                    android:drawableLeft="@android:drawable/ic_dialog_info"
+                    android:background="#FFFFFF"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="8dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="about Eco Enzyme"
+                    android:background="#FFFFFF"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Tombol ON -->
+        <Button
+            android:id="@+id/buttonOn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ON"
+            android:background="#C8E6C9"
+            android:textColor="#000000"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/buttonOn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OF"
+            android:background="#C8E6C9"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+</ScrollView>
