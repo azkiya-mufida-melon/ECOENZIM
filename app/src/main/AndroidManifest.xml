@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.pemantauanecoenzim"> <!-- Pastikan nama package sesuai project kamu -->
 
     <application
         android:allowBackup="true"
@@ -12,22 +13,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PemantauanEcoenzim"
         tools:targetApi="31">
+
+        <!-- SplashActivity sebagai launcher utama -->
         <activity
-            android:name=".bg_temperature_box"
-            android:exported="false" />
-        <!-- SplashActivity jadi launcher -->
-        <activity
-            android:name=".activity_splash"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- MainActivity biasa, dibuka dari Splash -->
+        </activity>
+
+        <!-- MainActivity, ditampilkan setelah splash -->
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+
+        <!-- bg_temperature_box bukan Activity, harus DIHAPUS kalau cuma layout -->
+        <!-- Kalau ini file XML drawable/layout, tidak perlu dideklarasikan di manifest -->
+
     </application>
 
 </manifest>
