@@ -13,6 +13,6 @@ public class MainActivity extends AppCompatActivity {
 }
 
 // Class tambahan sesuai permintaan
-class prof {
+class profil {
     // Tambahkan isi class prof di sini sesuai kebutuhan
 }
