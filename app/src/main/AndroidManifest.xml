@@ -12,18 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PemantauanEcoenzim"
         tools:targetApi="31">
-
+        <activity
+            android:name=".bg_temperature_box"
+            android:exported="false" />
         <!-- SplashActivity jadi launcher -->
         <activity
             android:name=".activity_splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- MainActivity biasa, dibuka dari Splash -->
+        </activity> <!-- MainActivity biasa, dibuka dari Splash -->
         <activity
             android:name=".MainActivity"
             android:exported="true" />
