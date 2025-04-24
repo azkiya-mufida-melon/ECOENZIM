@@ -1,0 +1,33 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="300dp"
+    android:viewportWidth="200"
+    android:viewportHeight="300">
+
+    <!-- Kotak dengan sudut tumpul semua -->
+    <path
+        android:fillColor="#3D90D7"
+        android:pathData="
+            M20,0
+            H180
+            Q200,0 200,20
+            V280
+            Q200,300 180,300
+            H20
+            Q0,300 0,280
+            V20
+            Q0,0 20,0
+            Z" />
+
+    <!-- Gelombang dalam dibatasi agar tidak sampai ke pojok -->
+    <path
+        android:fillColor="#3A59D1"
+        android:pathData="
+            M20,200
+            C60,180 140,220 180,200
+            L180,280
+            Q180,300 160,300
+            H40
+            Q20,300 20,280
+            Z" />
+</vector>
